@@ -1,0 +1,95 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{ 
+.container{  
+  padding:80px;  
+  background-color:white;  
+}  
+input[type=text], input[type=password], textarea{  
+  width:100%;
+  margin:5px 0 20px 0; 
+  display:inline-block;  
+  background:white;  
+}
+.registerbtn{  
+  background-color:blue;  
+  color:white;
+  padding:10px 10px;
+  margin:10px 0;  
+  border:2px solid black;  
+  cursor:pointer;  
+  width:100%;  
+}  
+.registerbtn:hover{  
+  font-size:10px;  
+}  
+</style>  
+</head>  
+<body>  
+<form>  
+  <div class="container">  
+  <center>  <h1>Registeration Form</h1> </center>  
+  <hr>  
+  <label> Firstname </label>   
+<input type="text" name="firstname" placeholder="Firstname" required />   
+<label> Lastname: </label>    
+<input type="text" name="lastname" placeholder="Lastname" required />   
+<div>  
+<label>   
+Course :  
+</label>   
+  <select>  
+<option value="Course">select</option>  
+<option value="BCA">BCA</option>  
+<option value="BBA">BBA</option>  
+<option value="B.TECH">B.TECH</option>  
+<option value="B.SC">B.SC</option>  
+<option value="BCOM">BCOM</option>  
+<option value="BPHARMA">BPHARMA</option>
+<option value="BA">BA</option>
+</select>  
+</div>
+<div>  
+<label>   
+Country:  
+</label>   
+<select>  
+<option value="Country">select</option>  
+<option value="INDIA">INDIA</option>  
+<option value="JAPAN">JAPAN</option>  
+<option value="CANADA">CANADA</option>  
+<option value="RUSSIA">RUSSIA</option>  
+<option value="USA">USA</option>  
+<option value="U.K">U.K</option>
+<option value="ITALY">ITALY</option>
+</select>  
+</div>
+<div>  
+<label>   
+Gender:  
+</label><br>  
+<input type="radio" value="Male" name="gender">Male   
+<input type="radio" value="Female" name="gender">Female   
+<input type="radio" value="Other" name="gender">Other  
+</div>  
+<label>   
+Phone:  
+</label>  
+<input type="text" name="phone" placeholder="phone no.">   
+Address:  
+<textarea cols="80" rows="3" placeholder="Address" value="address">  
+</textarea>  
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email">  
+    <label for="psw"><b>Password</b></label>  
+    <input type="password" placeholder="Enter Password" name="Password">  
+    <label for="Password-repeat"><b>Confirm Password</b></label>  
+    <input type="Password" placeholder="Confirm Password" name="Password-repeat"> 
+    <input type="checkbox" checked="checked"> Remember me
+    <button type="submit" class="registerbtn">Register</button>    
+</form>  
+</body>  
+</html>  
